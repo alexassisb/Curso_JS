@@ -1,0 +1,312 @@
+// let hora = 12.59;
+
+// if (hora > 6 && hora < 12){
+//     console.log('Bom dia');
+// }
+//  else if(hora > 12 && hora < 18) {
+//     console.log('Boa tarde');
+//  }
+//  else {
+//     console.log('Boa noite');
+//  }
+
+
+// let permissão;
+// permissão = 'presidente'
+
+// switch (permissão) {
+//     case 'comum':
+//         console.log('Usuario comum');
+//         break;
+
+//     case 'gerente':
+//         console.log('Usuario Gerente');
+//         break;
+
+//     case 'presidente':
+//         console.log('Usuario Presitente');
+//         break;
+
+//     default:
+//         console.log('Usuario não permitido');
+// }
+
+
+// For
+// for (let i = 5; i >= 1; i--) {
+//     if (i % 2 !== 0) {
+//         console.log(i);
+//     }
+
+// }
+
+// const pessoa = {
+//     nome: 'alex',
+//     idade: 25
+// };
+
+// for(let chave in pessoa) {
+//     console.log(chave,pessoa['nome']);
+// }
+
+// const cores = ['vermelho','azul','verde','amarelo'];
+
+// for (let indice in cores) {
+//     console.log(indice,cores[indice]);
+// }
+
+// for (let cor of cores){
+//     console.log(cor);
+// }
+
+// let numero1 = 7;
+// let numero2 = 4;
+
+// function maiorNumero() {
+//     if (numero1 > numero2) {
+//         console.log('O maior número é:', numero1);
+//     }
+//     else {
+//         console.log(numero2);
+//     }
+// }
+
+// maiorNumero();
+
+// //////
+
+// let valorMaior = max(5, 9);
+// console.log(valorMaior);
+
+
+// function max(numero1, numero2) {
+//     if (numero1 > numero2)
+//         return numero1;
+//         return numero2;
+// }
+
+// let valorMaior = max(5, 9);
+// console.log(valorMaior);
+
+
+// function max(numero1, numero2) {
+//     return numero1 > numero2 ? numero1 : numero2;
+// }
+
+
+// Divisivel por 3 => Fizz
+// Divisivel por 5 => Buzz
+// Divisivel por 3 e 5 => FizzBuzz
+// Não divisivel por 3 ou 5 => retorna a entrada
+// Não é um numero =>'Não é um numero'
+
+
+// const resultado = fizzBuzz(2);
+// console.log(resultado);
+
+// function fizzBuzz(entrada) {
+//     if (typeof entrada !== 'number') {
+//         return 'Não é um numero';
+//     }
+//     if ((entrada % 3 === 0) && (entrada % 5 === 0)) {
+//         return ('FizzBuss');
+//     }
+//     if (entrada % 3 === 0) {
+//         return ('Fizz');
+//     }
+//     if (entrada % 5 === 0) {
+//         return ('Buzz');
+//     }
+
+//     return entrada;
+// }
+
+// verificarVelocidade(100)
+
+// function verificarVelocidade(velocidade) {
+//     if (velocidade <= 70)
+//         console.log('velocidade Ok');
+//     else {
+//         const pontos = ((velocidade - 70) / 5);
+//         if (pontos >= 12) {
+//             console.log('Carteira Suspensa');
+//         }
+//         else console.log('Pontos', pontos);
+//     }
+
+
+//     return ('Fizz');
+// }
+//     if (entrada % 5 === 0) {
+//         return ('Buzz');
+//     }
+//     return entrada;
+// }
+
+// verificarVelocidade(100);
+
+// function verificarVelocidade(velocidade){
+//     const velMax = 70;
+//     const kmporPonto = 5
+//     if (velocidade <= velMax)
+//         console.log('Velocidade OK');
+//     else {
+//         const pontos = Math.floor(((velocidade - velMax) / kmporPonto));
+//         if (pontos >=12)
+//         console.log('Carteira suspensa');
+//         else
+//             console.log('Pontos', pontos);
+//     }
+// }
+// exibirTipo(8)
+// function exibirTipo(limite) {
+//     for (let i = 0; i <= limite; i++) {
+//         if (i % 2 === 0)
+//             console.log(i, "PAR");
+//         else {
+//             console.log(i, "IMPAR");
+//         }
+//     }
+// }
+// exibirTipo(10)
+// function exibirTipo(obj){
+//     if(typeof obj !== 'number')
+//     console.log('O Objeto',obj,'é uma String')
+//         else
+//         console.log('O Objeto',obj,'é um numero');
+//}
+
+// const filme = {
+//     titulo: 'Avengers',
+//     Ano: 2022,
+//     Diretor: 'Tony Stark'
+// }
+// exibirTipo(filme)
+// function exibirTipo(obj) {
+//     for (let prop in obj)
+//     if (typeof obj[prop] === 'string') {
+//             console.log(prop,obj[prop]);
+//     }
+// }
+// const filme = {
+//     titulo: 'Avengers',
+//     Ano: 2022,
+//     Diretor: 'Tony Stark'
+// }
+// exibirTipo(filme)
+// function exibirTipo(obj) {
+//     for (let prop in obj)
+//     if (typeof obj[prop] === 'string') {
+//             console.log(prop,obj[prop]);
+//     }
+// }
+
+// var fatorial = 4;
+// var resultado = fatorial;
+// for (var i = 1; i < fatorial; i++) {
+//     resultado *= i;
+// }
+// console.log(resultado);
+
+// const idades = [15+46+75+34+23];
+// let total = 0;
+
+// for (let i in idades) {
+//     total = total + idades;
+//     console.log('total', total);
+// }
+
+// let chute = 5;
+// let valor_gerado = 5;
+
+// if (chute === valor_gerado) {
+//     console.log('Acertou!!');
+// }
+// else if (chute < valor_gerado) {
+//     console.log('Chutou abaixo!!');
+// }
+// else
+//     console.log("chutou Acima!!!");
+
+// somar(5);
+// function somar(limite) {
+//     let multiplosDe3 = 0;
+//     let multiplosDe5 = 0;
+
+//     for (i = 0; i <= limite; i++){
+//         if(i % 3 === 0)
+//             multiplosDe3 += i;
+//         if(i % 5 === 0)
+//         multiplosDe5 += i;
+//     }
+
+//     console.log(multiplosDe3 + multiplosDe5);
+// }
+
+
+// const array = [90,70,80];
+
+// console.log(mediaDoAluno(array));
+
+// function mediaDoAluno(notas) {
+//     const media = calcularMedia(notas);
+
+//     if (media < 59) return 'F';
+//     if (media < 69) return 'D';
+//     if (media < 79) return 'C';
+//     if (media < 89) return 'B';
+//     return 'A';
+// }
+
+// function calcularMedia(array) {
+//     let soma = 0;
+//     for (let valor of array){
+//         soma += valor;
+//     }
+//     return soma / (array.length);
+// }
+
+// exibirAsteriscos(10);
+// function exibirAsteriscos(linhas) {
+//     // let padrao = '';
+//     // for (let linha = 1; linha <= linhas; linha++) {
+//     //     padrao += '*';
+//     //     console.log(padrao);
+//     // }
+
+//     for(let linha =1; linha <=linhas; linha++){
+//         let padrao ='';
+//         for(let i =1; i<=linha; i++) {
+//             padrao += '*';
+//         }
+//         console.log(padrao);
+//     }
+// }
+
+
+
+//Factory Functions (Função de Fábrica)
+// function criarCelular(marcaCelular, tamanhoTela, capacidadeBateria) {
+//     return {
+//         marcaCelular,
+//         tamanhoTela,
+//         capacidadeBateria,
+//         ligar() {
+//             console.log("fazendo ligação...")
+//         }
+//     }
+// }
+
+// const celular1 = criarCelular('Zenfone', 5.7, 4500);
+// console.log(celular1);
+
+// function criarObjeto(nome, idade, turma) {
+//     return {
+//         nome,
+//         idade,
+//         turma,
+//     }
+// }
+
+// const aluno1 = criarObjeto ('Alex', 29, '3b' );
+// console.log(aluno1);
