@@ -30,7 +30,7 @@
 //     default:
 //         console.log('Usuario não permitido');
 // }
-
+///
 
 // For
 // for (let i = 5; i >= 1; i--) {
