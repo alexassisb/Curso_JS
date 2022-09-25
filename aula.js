@@ -297,16 +297,16 @@
 //     }
 // }
 
-// const celular1 = criarCelular('Zenfone', 5.7, 4500);
-// console.log(celular1);
+const celular1 = criarCelular('Zenfone', 5.7, 4500);
+console.log(celular1);
 
-// function criarObjeto(nome, idade, turma) {
-//     return {
-//         nome,
-//         idade,
-//         turma,
-//     }
-// }
+function criarObjeto(nome, idade, turma) {
+    return {
+        nome,
+        idade,
+        turma,
+    }
+}
 
-// const aluno1 = criarObjeto ('Alex', 29, '3b' );
-// console.log(aluno1);
+const aluno1 = criarObjeto('Alex', 29, '3b');
+console.log(aluno1);
