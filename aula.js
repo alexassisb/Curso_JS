@@ -311,4 +311,37 @@
 // const aluno1 = criarObjeto('Alex', 29, '3b');
 // console.log(aluno1);
 
-console.log(`Alex ${1+1}`)
+
+//  function criarAluno(nome, idade, sexo){
+//     return {
+//         nome,
+//         idade,
+//         sexo,
+//     }
+//  }
+
+// const aluno1 = criarAluno('Alex', 29, 'Masculino');
+// const aluno2 = criarAluno('Flavia', 32, 'Feminino');
+// let Alunos = [aluno1, aluno2]
+
+// console.log(Alunos[1].idade);
+
+// function myName (name) {
+//     console.log('Antes da callback');
+//     name();
+//     console.log('depois da callback');
+// }
+
+// myName(
+//     () => {
+//         console.log('Estou em uma callback')
+//     }
+// )
+
+let myArray = new Array ({
+    name:'Alex',
+    age: 29,
+    sex: 'man'
+
+})
+console.log(myArray.length);
