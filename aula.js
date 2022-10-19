@@ -338,10 +338,21 @@
 //     }
 // )
 
-let myArray = new Array ({
-    name:'Alex',
-    age: 29,
-    sex: 'man'
+// let myArray = {
+//     name:'Alex',
+//     age: 29,
+//     sex: 'man'
 
-})
-console.log(myArray.length);
+// };
+
+// console.log(`meu nome é ${myArray.name} e minha idade é ${myArray.age}`);
+
+// let myArray2 = new Array ({
+//     name: 'Alex',
+//     age: 29,
+//     sex: 'man'
+// });
+
+// console.log(`meu nome é ${myArray2[0].name} e minha idade é ${myArray2[0].age}`)
+
+let name = new String ('Alex');
