@@ -10,7 +10,6 @@
 //     console.log('Boa noite');
 //  }
 
-
 // let permissão;
 // permissão = 'presidente'
 
@@ -78,7 +77,6 @@
 // let valorMaior = max(5, 9);
 // console.log(valorMaior);
 
-
 // function max(numero1, numero2) {
 //     if (numero1 > numero2)
 //         return numero1;
@@ -88,18 +86,15 @@
 // let valorMaior = max(5, 9);
 // console.log(valorMaior);
 
-
 // function max(numero1, numero2) {
 //     return numero1 > numero2 ? numero1 : numero2;
 // }
-
 
 // Divisivel por 3 => Fizz
 // Divisivel por 5 => Buzz
 // Divisivel por 3 e 5 => FizzBuzz
 // Não divisivel por 3 ou 5 => retorna a entrada
 // Não é um numero =>'Não é um numero'
-
 
 // const resultado = fizzBuzz(2);
 // console.log(resultado);
@@ -133,7 +128,6 @@
 //         }
 //         else console.log('Pontos', pontos);
 //     }
-
 
 //     return ('Fizz');
 // }
@@ -243,7 +237,6 @@
 //     console.log(multiplosDe3 + multiplosDe5);
 // }
 
-
 // const array = [90,70,80];
 
 // console.log(mediaDoAluno(array));
@@ -283,8 +276,6 @@
 //     }
 // }
 
-
-
 //Factory Functions (Função de Fábrica)
 // function criarCelular(marcaCelular, tamanhoTela, capacidadeBateria) {
 //     return {
@@ -310,7 +301,6 @@
 
 // const aluno1 = criarObjeto('Alex', 29, '3b');
 // console.log(aluno1);
-
 
 //  function criarAluno(nome, idade, sexo){
 //     return {
@@ -355,4 +345,50 @@
 
 // console.log(`meu nome é ${myArray2[0].name} e minha idade é ${myArray2[0].age}`)
 
-let name = new String ('Alex');
+// let name = new String ('Alex');
+// const temp = 36
+// function medirTemperatura(){
+//     if(temp <=36){
+//         console.log('Temperatura ok')
+//     }
+//     else
+//     console.log('temperatura alta!!!!')
+// }
+
+// function calculadora(number1, operator, number2) {
+//   let resultado;
+//   switch (operator) {
+//     case "+":
+//       resultado = number1 + number2;
+//       break;
+//     case "-":
+//       resultado = number1 - number2;
+//       break;
+//     case "*":
+//       resultado = number1 * number2;
+//       break;
+//     case "/":
+//       resultado = number1 / number2;
+//       break;
+//     default:
+//       console.log("Operador não encontrado");
+//   }
+//   return resultado;
+// }
+
+// console.log(calculadora(25, "@", 2));
+
+// function nome(name = ''){
+//     if(name === ''){
+//         throw 'obrigatorio digitar um nome'
+//     }
+//     console.log(name)
+// }
+
+// try {
+//     nome('alex')
+// } catch (e) {
+//     console.log(e)
+// }
+
+// console.log('após o try catch')
