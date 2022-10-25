@@ -393,4 +393,43 @@
 
 // console.log('após o try catch')
 
-111
+// function notaAluno(nota) {
+//   if (nota <= 60) return "F";
+
+//   if (nota <= 69) return "D";
+
+//   if (nota <= 79) return "C";
+
+//   if (nota <= 89) return "B";
+//   else return "A";
+// }
+
+// console.log(notaAluno(-1));
+
+let balanco = {
+    receitas: [150, 300, 450.23, 600],
+    despesas: [200, 100, 3320.22]
+}
+function soma(array) {
+    let total = 0;
+
+    for (let valor of array) {
+        total += valor
+    }
+    return total;
+}
+
+function calculoFinanceiro() {
+    const calculoReceitas = soma(balanco.receitas);
+    const calculoDespesas = soma(balanco.despesas);
+    const total = calculoReceitas - calculoDespesas;
+
+    if (total <= 0) {
+        balancoTexto = 'Negativo';
+    }
+    else balancoTexto = 'Positivo';
+
+    console.log(`Seu saldo atual é ${balancoTexto}:R$${total.toFixed(2)}`);
+}
+
+calculoFinanceiro();
