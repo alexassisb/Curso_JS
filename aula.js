@@ -406,30 +406,146 @@
 
 // console.log(notaAluno(-1));
 
-let balanco = {
-    receitas: [150, 300, 450.23, 600],
-    despesas: [200, 100, 3320.22]
-}
-function soma(array) {
-    let total = 0;
+// let balanco = {
+//     receitas: [150, 300, 450.23, 600],
+//     despesas: [200, 100, 3320.22]
+// }
+// function soma(array) {
+//     let total = 0;
 
-    for (let valor of array) {
-        total += valor
-    }
-    return total;
-}
+//     for (let valor of array) {
+//         total += valor
+//     }
+//     return total;
+// }
 
-function calculoFinanceiro() {
-    const calculoReceitas = soma(balanco.receitas);
-    const calculoDespesas = soma(balanco.despesas);
-    const total = calculoReceitas - calculoDespesas;
+// function calculoFinanceiro() {
+//     const calculoReceitas = soma(balanco.receitas);
+//     const calculoDespesas = soma(balanco.despesas);
+//     const total = calculoReceitas - calculoDespesas;
 
-    if (total <= 0) {
-        balancoTexto = 'Negativo';
-    }
-    else balancoTexto = 'Positivo';
+//     if (total <= 0) {
+//         balancoTexto = 'Negativo';
+//     }
+//     else balancoTexto = 'Positivo';
 
-    console.log(`Seu saldo atual é ${balancoTexto}:R$${total.toFixed(2)}`);
-}
+//     console.log(`Seu saldo atual é ${balancoTexto}:R$${total.toFixed(2)}`);
+// }
 
-calculoFinanceiro();
+// calculoFinanceiro();
+
+// function transformDegree(degree) {
+//     const celsiusExists = degree.toUpperCase().includes('C');
+//     const fahrenheintExists = degree.toUpperCase().includes('F');
+
+//     if (!celsiusExists && !fahrenheintExists) {
+//         throw new Error('Grau não identificado')
+//     }
+
+//     //Fluxo F to C
+
+//     let updateDegree = Number(degree.toUpperCase().replace("F", ""));
+//     let formula = fahrenheint => (fahrenheint - 32) * 5 / 9;
+//     let degreeSign = 'C';
+
+
+//     //Fluxo C to F
+//     if (celsiusExists) {
+//         updateDegree = Number(degree.toUpperCase().replace("C", ""));
+//         formula = celsius => celsius * 9/5 + 32;
+//         degreeSign = 'F';
+//     }
+//     return formula(updateDegree).toFixed(2) + degreeSign;
+// }
+
+// try {
+//     console.log(transformDegree('21C'));
+//     console.log(transformDegree('70F'));
+//     transformDegree('50z')
+// } catch (error) {
+//     console.log(error)
+// }
+
+
+/* 
+    ∞ Buscando e contando dados em Arrays ∞
+    Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
+        • Contar o número de categorias e o número de livros em cada categoria
+        • Contar o número de autores
+        • Mostrar livros do autor Auguto Cury
+        • Transformar a função acima em uma função que irá receber o nome do autor e devolver os livros desse autor.
+*/
+
+// const booksByCategory = [
+//     {
+//         category: "Riqueza",
+//         books: [
+//             {
+//                 title: "Os segredos da mente milionária",
+//                 author: "T. Harv Eker",
+//             },
+//             {
+//                 title: "O homem mais rico da Babilônia",
+//                 author: "George S. Clason",
+//             },
+//             {
+//                 title: "Pai rico, pai pobre",
+//                 author: "Robert T. Kiyosaki e Sharon L. Lechter",
+//             },
+//         ],
+//     },
+//     {
+//         category: "Inteligência Emocional",
+//         books: [
+//             {
+//                 title: "Você é Insubstituível",
+//                 author: "Augusto Cury",
+//             },
+//             {
+//                 title: "Ansiedade – Como enfrentar o mal do século",
+//                 author: "Augusto Cury",
+//             },
+//             {
+//                 title: "Os 7 hábitos das pessoas altamente eficazes",
+//                 author: "Stephen R. Covey",
+//             },
+//         ],
+//     },
+// ];
+
+// const totalCategories = booksByCategory.length;
+
+// for (let category of booksByCategory) {
+//     console.log('Total de livros da categoria:', category.category)
+//     console.log(category.books.length)
+// }
+
+// function countAuthors() {
+//     let authors = [];
+
+//     for (let category of booksByCategory) {
+//         for (let book of category.books) {
+//             if (authors.indexOf(book.author) == -1) {
+//                 authors.push(book.author)
+//             }
+//         }
+//     }
+//     console.log('Total de autores:', authors.length);
+// }
+
+// countAuthors();
+
+// function booksOfAuthor(author) {
+//     let books = [];
+
+//     for (let category of booksByCategory) {
+//         for (let book of category.books) {
+//             if (book.author === author) {
+//                 books.push(book.title)
+//             }
+//         }
+//     }
+//     console.log(`Livros do Autor ${author}: ${books.join(", ")}`);
+// }
+
+// booksOfAuthor('Augusto Cury');
