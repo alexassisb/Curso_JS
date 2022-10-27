@@ -549,3 +549,41 @@
 // }
 
 // booksOfAuthor('Augusto Cury');
+
+// let endereco = {
+//     rua:'Mecia Figueiredo morais,12',
+//     cidade:'Varginha MG',
+//     CEP:'37004-330'
+// }
+
+// function exibirEndereco (endereco) {
+//     for(let chave in endereco)
+//     console.log(chave,endereco[chave]);
+// }
+
+// exibirEndereco(endereco)
+
+// const numeros = new Array (1,2,3);
+
+// numeros.unshift(0);
+// console.log(numeros)
+// numeros.splice(2,0,'c')
+// console.log(numeros)
+// numeros.push(7)
+// console.log(numeros)
+const n1 = document.getElementsByClassName("inputn1");
+const n2 = document.getElementsByClassName("inputn2");
+const n3 = document.getElementsByClassName("inputn3");
+const retorno = document.getElementById("retorno")
+const btn = document.querySelector ("button")
+
+btn.addEventListener("click", verificarTriangulo(n1, n2, n3));
+
+function verificarTriangulo(n1, n2, n3) {
+    if ((n1 + n2 > n3) && (n1 + n3 > n2) && (n2 + n3 > n1)) {
+        retorno.textContent = "Medidas informadas formam um triangulo."
+    } else
+        retorno.textContent = "Medidas informadas não formam um triangulo."
+};
+
+
