@@ -573,3 +573,18 @@
 // console.log(numeros)
 
 
+const numero1 = document.querySelector('.inputn1');
+const numero2 = document.querySelector(".inputn2");
+const numero3 = document.querySelector(".inputn3");
+const value = document.querySelector("#retorno");
+const btn = document.querySelector("#btn1");
+
+ function calculaPiramide(n1, n2, n3){
+  if (n1 + n2 > n3 && n1 + n3 > n2 && n2 + n3 > n1) {
+    console.log(numero1);
+    value.textContent = "Medidas informadas formam um triangulo.";
+  } else
+    value.textContent = "Medidas informadas não formam um triangulo.";
+};
+
+btn.onclick = calculaPiramide(numero1, numero2, numero3)
