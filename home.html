@@ -6,23 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./aula.js"></script>
+    <!-- <script src="./aula.js"></script> -->
 </head>
 
 <body>
-<main>
-    <h1>Verificador de Triangulo</h1>
-    <div class="span">
-        <h2>Digite abaixo o valores para verificar se é triangulo:</h2>
-        <span id="retorno"> </span>        
-    </div>
-    <div class="input-container">
-        <input class="inputn1" type="text">
-        <input class="inputn2" type="text">
-        <input class="inputn3" type="text">
-        <button>increase</button>
-    </div>
-</main>
+    <main>
+        <h1>Verificador de Triangulo</h1>
+        <div class="span">
+            <h2>Digite abaixo o valores para verificar se é triangulo:</h2>
+            <h3 id="retorno">"0"</h3>
+        </div>
+        <div class="input-container">
+            <input class="inputn1" type="text">
+            <input class="inputn2" type="text">
+            <input class="inputn3" type="text">
+            <button id="btn1">increase</button>
+
+        </div>
+        <script>
+            const n1 = document.querySelector(".inputn1");
+            const n2 = document.querySelector(".inputn2");
+            const n3 = document.querySelector(".inputn3");
+            const retorno = document.querySelector("#retorno")
+            const btn = document.querySelector("#btn1")
+
+            btn.addEventListener("click", (n1,n2,n3) => {
+                if ((n1 + n2 > n3) && (n1 + n3 > n2) && (n2 + n3 > n1)) {
+                    retorno.textContent = "Medidas informadas formam um triangulo."
+                } else
+                        retorno.textContent = "Medidas informadas não formam um triangulo."
+                });
+            console.log("ok")
+
+
+        </script>
+    </main>
 </body>
 
 </html>

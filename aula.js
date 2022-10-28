@@ -571,19 +571,5 @@
 // console.log(numeros)
 // numeros.push(7)
 // console.log(numeros)
-const n1 = document.getElementsByClassName("inputn1");
-const n2 = document.getElementsByClassName("inputn2");
-const n3 = document.getElementsByClassName("inputn3");
-const retorno = document.getElementById("retorno")
-const btn = document.querySelector ("button")
-
-btn.addEventListener("click", verificarTriangulo(n1, n2, n3));
-
-function verificarTriangulo(n1, n2, n3) {
-    if ((n1 + n2 > n3) && (n1 + n3 > n2) && (n2 + n3 > n1)) {
-        retorno.textContent = "Medidas informadas formam um triangulo."
-    } else
-        retorno.textContent = "Medidas informadas não formam um triangulo."
-};
 
 
